@@ -5,6 +5,7 @@
     "description": "Typescript Webpack template with Babel, SASS, ESLint, Stylelint, Prettier & Husky",
     "main": "./src/index.ts",
     "scripts": {
+        "prepare": "husky install",
         "build": "cross-env NODE_ENV=production webpack",
         "dev": "webpack serve",
         "start": "serve public --listen 8080",
