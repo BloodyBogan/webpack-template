@@ -12,6 +12,8 @@
         "lint": "npm run lint:code && npm run lint:styles",
         "lint:code": "eslint '*/**/*.{mjs,js,ts}' --quiet --fix",
         "lint:styles": "stylelint '*/**/*.scss' --quiet --fix",
+        "cypress": "cypress open",
+        "e2e": "cypress run",
         "a11y-check": "(npm run start &) && wait-on http-get://localhost:8080 && pa11y-ci && fuser -k 8080/tcp"
     },
     "husky": {
@@ -45,9 +47,11 @@
         "core-js": "^3.9.0",
         "cross-env": "^7.0.3",
         "css-loader": "^5.0.2",
+        "cypress": "^7.0.1",
         "eslint": "^7.23.0",
         "eslint-config-prettier": "^8.1.0",
         "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-cypress": "^2.11.2",
         "eslint-plugin-import": "^2.22.1",
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-prettier": "^3.3.1",

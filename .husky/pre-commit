@@ -3,3 +3,4 @@
 
 npx lint-staged
 yarn run a11y-check
+yarn run e2e
