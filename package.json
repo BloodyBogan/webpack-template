@@ -10,7 +10,7 @@
         "dev": "webpack serve",
         "start": "serve public --listen 8080",
         "lint": "npm run lint:code && npm run lint:styles",
-        "lint:code": "eslint '*/**/*.{mjs,js,ts}' --quiet --fix",
+        "lint:code": "eslint '*/**/*.{mjs,js,ts}' --ignore-pattern '/public/' --quiet --fix",
         "lint:styles": "stylelint '*/**/*.scss' --quiet --fix",
         "cypress": "cypress open",
         "e2e": "cypress run",
